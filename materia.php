@@ -23,7 +23,7 @@
             error_reporting(E_ALL);
             ini_set('display_errors','1');
         
-            $enlace= new mysqli ("35.223.188.35", "root", "admin", "calificaciones");
+            $enlace= new mysqli ("35.223.98.18", "root", "admin", "calificaciones");
             if($enlace){
                 //echo"ACK.<br>";
             }else{
