@@ -23,7 +23,7 @@
             error_reporting(E_ALL);
             ini_set('display_errors','1');
         
-            $enlace= new mysqli ("34.66.198.61", "root", "admin", "calificaciones");
+            $enlace= new mysqli ("35.223.188.35", "root", "admin", "calificaciones");
             if($enlace){
                 //echo"ACK.<br>";
             }else{
@@ -34,12 +34,12 @@
             $password = $_POST['contraseña'];
 
             //Checar Login
-            $resultado_query=mysqli_query ($enlace, "select matricula, contraseña from alumno where matricula like '%$matricula%' ;" );
+            /*$resultado_query=mysqli_query ($enlace, "select matricula, contraseña from alumno where matricula like '%$matricula%' ;" );
             $row_asociativo_check = mysqli_fetch_assoc($resultado_query);
 
             if($matricula!=$row_asociativo_check['matricula'] || $password!=$row_asociativo_check['contraseña'] ){
                 die("Error en el login");
-            }
+            }*/
             
             
         
